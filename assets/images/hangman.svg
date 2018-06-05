@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+	<style type="text/css">
+		.st0{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	</style>
+	<g id="head">
+		<path d="M511,146c25.4,0,46,20.6,46,46s-20.6,46-46,46c-25.4,0-46-20.6-46-46S485.6,146,511,146 M511,142c-27.6,0-50,22.4-50,50
+			s22.4,50,50,50c27.6,0,50-22.4,50-50S538.6,142,511,142L511,142z"/>
+	</g>
+	<g id="body">
+		<line class="st0" x1="511" y1="239" x2="511" y2="448"/>
+	</g>
+	<g id="left-arm">
+		<line class="st0" x1="423" y1="280" x2="511" y2="348"/>
+	</g>
+	<g id="right-arm">
+		<line class="st0" x1="511.3" y1="348.3" x2="598.7" y2="279.7"/>
+	</g>
+	<g id="right-leg">
+		<line class="st0" x1="512.2" y1="444.7" x2="588.8" y2="577.3"/>
+	</g>
+	<g id="left-leg">
+		<line class="st0" x1="509.8" y1="444.7" x2="433.2" y2="577.3"/>
+	</g>
+	<g id="left-foot">
+		<line class="st0" x1="409" y1="558" x2="434" y2="577"/>
+	</g>
+	<g id="right-foot">
+		<line class="st0" x1="612.9" y1="557.8" x2="588.1" y2="577.2"/>
+	</g>
+</svg>

@@ -17,17 +17,33 @@
 </head>
 <body>
 
-    <header class="jumbotron">
+    <header>
         <h1>Hangman</h1>
-        <h4>Press any letter to get started.</h4>
+        <h4>Press any letter to get started!</h4>
     </header>
     <div><span id="wins">Wins: </span><span id="losses">Losses: </span></div>
-    <div>Current Word</div>
-    <div id="blankWord"></div>
-    <div>Guesses Remaining</div>
-    <div id="guessesRemaining"></div>
-    <div>Incorrect Guesses</div>
-    <div id="incorrectGuesses"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 hangman">
+                        <object data="assets/images/hangman.svg" type="image/svg+xml" class="d-flex justify-content-center"></object>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="blankWord"></div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gameLabel">Guesses Remaining:</div>
+                <div id="guessesRemaining" class="gameValue"></div>
+                <div class="gameLabel">Incorrect Guesses:</div>
+                <div id="incorrectGuesses" class="gameValue"></div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
