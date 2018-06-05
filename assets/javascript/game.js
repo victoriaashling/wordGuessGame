@@ -22,7 +22,7 @@ $(document).ready(function() {
     // And a selection of counter variables initialzed for display and later use.
     var wins = 0;
     var losses = 0;
-    var guessesRemaining = 10;
+    var guessesRemaining = 8;
 
     
 
@@ -55,7 +55,7 @@ $(document).ready(function() {
         blankPart = blankString.substring(0, currentWord.length);
         $("#blankWord").text(blankPart);
         // These lines either reset or increment the appropriate values.
-        guessesRemaining = 10;
+        guessesRemaining = 8;
         $("#guessesRemaining").text(guessesRemaining);
         $("#incorrectGuesses").text("");
         $("#losses").text("Losses: " + losses);
