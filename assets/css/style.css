@@ -13,6 +13,12 @@ span {
     padding: 1em;
 }
 
+svg {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .st0 {
     fill:none;
     stroke:#000000;
@@ -24,6 +30,7 @@ object {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    height: 300px;
 }
 
 .gameLabel {

@@ -27,7 +27,26 @@
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-12 hangman">
-                        <object data="assets/images/hangman.svg" type="image/svg+xml" class="d-flex justify-content-center"></object>
+                        <!-- <object data="assets/images/hangman-crop.svg" type="image/svg+xml" class="d-flex justify-content-center" id="full-man"></object> -->
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 222 487" style="enable-background:new 0 0 222 487;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+                        </style>
+                        <g id="head">
+                            <path d="M112,36c25.4,0,46,20.6,46,46s-20.6,46-46,46s-46-20.6-46-46S86.6,36,112,36 M112,32c-27.6,0-50,22.4-50,50s22.4,50,50,50
+                                s50-22.4,50-50S139.6,32,112,32L112,32z"/>
+                        </g>
+                        <g id="body">
+                            <line class="st0" x1="112" y1="129" x2="112" y2="338"/>
+                        </g>
+                        <line id="left-arm" class="st0" x1="24" y1="170" x2="112" y2="238"/>
+                        <line id="right-arm" class="st0" x1="112.3" y1="238.3" x2="199.7" y2="169.7"/>
+                        <line id="right-leg" class="st0" x1="113.2" y1="334.7" x2="189.8" y2="467.3"/>
+                        <line id="left-leg" class="st0" x1="110.8" y1="334.7" x2="34.2" y2="467.3"/>
+                        <line id="left-foot" class="st0" x1="10" y1="448" x2="35" y2="467"/>
+                        <line id="right-foot" class="st0" x1="213.9" y1="447.8" x2="189.1" y2="467.2"/>
+                        </svg>
                     </div>
                 </div>
                 <div class="row">
@@ -36,7 +55,7 @@
                     </div> 
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex flex-column justify-content-center">
                 <div class="gameLabel">Guesses Remaining:</div>
                 <div id="guessesRemaining" class="gameValue"></div>
                 <div class="gameLabel">Incorrect Guesses:</div>

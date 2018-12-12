@@ -60,6 +60,8 @@ $(document).ready(function() {
         $("#incorrectGuesses").text("");
         $("#losses").text("Losses: " + losses);
         $("#wins").text("Wins: " + wins);
+
+        $("#head, #body, #left-arm, #right-arm, #left-leg, #right-leg, #left-foot, #right-foot").hide();
     };
 
     // We initialize the page by calling the resetPage function before any keys are pressed.
@@ -106,7 +108,7 @@ $(document).ready(function() {
         // This is what will happen if you win the game. I included the setTimeout function at the instigation of my dad who was annoyed that the last letter didn't update before the "You win" alert popped up. So this way, the letter has time to populate on the page before the alert does. It also gives the alert the name of the country with an upper case first letter. Finally, it updates the wins value and resets the page.
         if (blankPart.includes("_") === false) {
             setTimeout(function () {
-                wordPrint = currentWord.charAt(0).toUpperCase() + currentWord.slice(1, currentWord.length);
+                var wordPrint = currentWord.charAt(0).toUpperCase() + currentWord.slice(1, currentWord.length);
                 alert('You win! The correct word was "' + wordPrint + '."');
                 wins = wins + 1;
                 resetPage();
@@ -117,9 +119,40 @@ $(document).ready(function() {
 
         // This is what happens when you reach 0 guesses without winning. Basically, it tells you that you lost (and what the word was -- how aggravating to not know), updates losses, and resets the page, using our resetPage function.
         if (guessesRemaining < 1) {
-            alert('You Lose! The correct word was "' + currentWord + '."');
-            losses = losses + 1;
-            resetPage();            
+            setTimeout(function() {
+                var wordPrint = currentWord.charAt(0).toUpperCase() + currentWord.slice(1, currentWord.length);
+                alert('You lose! The correct word was "' + wordPrint + '."');
+                losses = losses + 1;
+                resetPage();  
+            }, 100);          
         };
+
+        
+        // Animate the hangman to show up as guessesRemaining ticks down.
+        if (guessesRemaining == 7) {
+            $("#head").show();
+        }
+        else if (guessesRemaining == 6) {
+            $("#body").show();
+        }
+        else if (guessesRemaining == 5) {
+            $("#left-arm").show();
+        }
+        else if (guessesRemaining == 4) {
+            $("#right-arm").show();
+        }
+        else if (guessesRemaining == 3) {
+            $("#left-leg").show();
+        }
+        else if (guessesRemaining == 2) {
+            $("#right-leg").show();
+        }
+        else if (guessesRemaining == 1) {
+            $("#left-foot").show();
+        }
+        else if (guessesRemaining == 0) {
+            $("#right-foot").show();
+        };
+
     };
 });
